@@ -1,21 +1,14 @@
 package one.digitalinnovation.gof.model;
 
+import jakarta.persistence.*;
 
-import ch.qos.logback.core.boolex.EvaluationException;
-import org.springframework.aot.generate.ValueCodeGenerator;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.data.annotation.Id;
-
-import javax.annotation.processing.Generated;
-
-import static org.springframework.aot.generate.ValueCodeGenerator.*;
-
-@EntityScan
+@Entity
 public class Cliente {
-    @Id
-    @Generated({"com.acme.generator.CodeGen"})
+   
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    
+    @ManyToOne
     private Endereco endereco;
 }
