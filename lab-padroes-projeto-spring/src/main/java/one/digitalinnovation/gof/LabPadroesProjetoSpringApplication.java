@@ -15,8 +15,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @author Vinícius
  */
 
-@EnableFeignClients
 @SpringBootApplication
+@EnableFeignClients
 public class LabPadroesProjetoSpringApplication {
 
 	public static void main(String[] args) {
