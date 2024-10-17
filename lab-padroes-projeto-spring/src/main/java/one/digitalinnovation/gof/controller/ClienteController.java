@@ -10,14 +10,14 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
 @RequestMapping("/clientes")
-@Tag(name = "Controller")
+@Tag(name = "Clientes")
 public class ClienteController {
     @Autowired
     private ClienteService clienteService;
 
     @GetMapping
     public ResponseEntity<Iterable<Cliente>> buscarTodos(){
-        return  ResponseEntity.ok(clienteService.buscarTodos());
+        return ResponseEntity.ok(clienteService.buscarTodos());
     }
 
     @GetMapping("/{id}")
