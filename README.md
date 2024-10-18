@@ -1,4 +1,4 @@
-# ExampleGof
+# Projeto para aprender a utilizar padrões de projeto
 Estrutura do projeto
 <ul>
   <li>Aplicação dos conceitos Singleton, Strategy e Facade</li>
